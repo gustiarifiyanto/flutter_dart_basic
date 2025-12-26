@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dart_basic/change_time_widget.dart';
+import 'package:flutter_dart_basic/widgets/images_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +18,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 151, 98, 243),
         ),
       ),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Gusti mainan Flutter')),
-        body: Center(child: ChangeTimeWidget()),
-      ),
+      home: const ImagesWidget(),
     );
   }
 }

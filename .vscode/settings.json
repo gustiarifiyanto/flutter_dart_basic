@@ -1,3 +1,7 @@
 {
-    "dart.flutterSdkPath": "C:\\Users\\Asus\\fvm\\versions\\3.38.5"
+  "dart.flutterSdkPath": "C:\\Users\\Asus\\fvm\\versions\\3.38.5",
+  "flutterTools.displayGetxContextMenu": false,
+  "flutterTools.displayMobxContextMenu": false,
+  "flutterTools.displayRiverpodContextMenu": false,
+  "flutterTools.displayModularContextMenu": false
 }
