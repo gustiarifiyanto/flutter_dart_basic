@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dart_basic/change_time_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +19,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Gusti mainan Flutter')
-          ),
-        body: Center(child: Text('Gusti Aje')),
+        appBar: AppBar(title: Text('Gusti mainan Flutter')),
+        body: Center(child: ChangeTimeWidget()),
       ),
     );
   }
