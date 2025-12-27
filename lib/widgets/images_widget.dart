@@ -15,7 +15,7 @@ class _ImagesWidgetState extends State<ImagesWidget> {
         centerTitle: true,
         title: const Text('Belajar Mandiri Icon'),
         elevation: 2,
-        actions: [Icon(Icons.logo_dev_sharp), SizedBox(width: 10)],
+        actions: [Icon(Icons.home_filled), SizedBox(width: 10)],
       ),
       body: Center(
         child: CircleAvatar(
