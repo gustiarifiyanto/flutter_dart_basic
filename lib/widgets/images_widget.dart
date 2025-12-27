@@ -17,8 +17,14 @@ class _ImagesWidgetState extends State<ImagesWidget> {
         elevation: 2,
         actions: [Icon(Icons.logo_dev_sharp), SizedBox(width: 10)],
       ),
-      body: Center(child: Image.asset('assets/images/gusti.png')
-      )
-    );  
+      body: Center(
+        child: CircleAvatar(
+          radius: 100,
+          backgroundImage: NetworkImage(
+            'https://avatars.githubusercontent.com/u/9919?s=200&v=4',
+          ),
+        ),
+      ),
+    );
   }
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class ShowTextWidget extends StatelessWidget {
   final String title;
+  // ignore: use_super_parameters
   const ShowTextWidget({Key? key, required this.title}) : super(key: key);
 
   @override
