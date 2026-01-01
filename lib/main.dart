@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dart_basic/layouting/row_widget.dart';
+import 'package:flutter_dart_basic/layouting/column_widget.dart';
+import 'package:flutter_dart_basic/layouting/listview_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 151, 98, 243),
         ),
       ),
-      home: const RowWidget(),
+      home: const ListviewWidget(),
     );
   }
 }

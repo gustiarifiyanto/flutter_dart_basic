@@ -25,16 +25,20 @@ class ColumnWidget extends StatelessWidget {
                 color: Colors.green,
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 70),
             Text(
               'bukan kamu',
               style: TextStyle(decoration: TextDecoration.underline),
             ),
-            Text(
-              'Rp. 1.000.000',
-              style: TextStyle(
-                color: Colors.red,
-                decoration: TextDecoration.lineThrough,
+            Expanded(
+              child: Card(
+                child: Text(
+                  'Rp. 1.000.000',
+                  style: TextStyle(
+                    color: Colors.red,
+                    decoration: TextDecoration.lineThrough,
+                  ),
+                ),
               ),
             ),
           ],
