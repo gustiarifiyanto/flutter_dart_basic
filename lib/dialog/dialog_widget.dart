@@ -32,6 +32,33 @@ class _DialogWidgetState extends State<DialogWidget> {
             },
             child: Text('Dialog'),
           ),
+          SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return Container(
+                    height: 300,
+                    child: Center(child: Text('Siapa anda')),
+                  );
+                },
+              );
+            },
+            child: Text('Bottomsheet'),
+          ),
+          SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Apaan nih ?'),
+                  backgroundColor: Colors.green,
+                ),
+              );
+            },
+            child: Text('Show Snack'),
+          ),
         ],
       ),
     );
