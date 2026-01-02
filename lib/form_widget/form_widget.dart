@@ -13,6 +13,7 @@ class _FormWidgetState extends State<FormWidget> {
   List<String> bahasa = ['indonesia', 'inggris', 'sunda'];
   bool isOn = false;
   bool isCheck = false;
+  DateTime? selectedDate;
 
   String gender = 'male';
   @override
@@ -130,6 +131,27 @@ class _FormWidgetState extends State<FormWidget> {
               ),
             ],
           ),
+          SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () async {
+              final dateTime = await showDatePicker(
+                context: context,
+                firstDate: DateTime(1999),
+                initialDate: DateTime(2026),
+                lastDate: DateTime(2045),
+              
+              );
+
+              if (dateTime != null) {
+                setState(() {
+                  selectedDate = dateTime;
+                });
+              }
+            },
+            child: Text('Pilih Tanggal'),
+          ),
+          SizedBox(height: 10),
+          Text('Tanggal yang anda pilih : $selectedDate'),
         ],
       ),
     );
