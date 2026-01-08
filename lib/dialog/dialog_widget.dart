@@ -38,14 +38,14 @@ class _DialogWidgetState extends State<DialogWidget> {
               showModalBottomSheet(
                 context: context,
                 builder: (context) {
-                  return Container(
+                  return SizedBox(
                     height: 300,
                     child: Center(child: Text('Siapa anda')),
                   );
                 },
               );
             },
-            child: Text('Bottomsheet'),
+            child: Text('Bottomsheet'), 
           ),
           SizedBox(height: 16),
           ElevatedButton(
