@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dart_basic/dialog/bottomnavbar_widget.dart';
-import 'package:flutter_dart_basic/navigation/page_one.dart';
+import 'package:flutter_dart_basic/demo/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 151, 98, 243),
         ),
       ),
-      home: const PageOne(),
+      home: const LoginPage(),
     );
   }
 }
